@@ -1,0 +1,100 @@
+<header class="header">
+  <div class="header__wrapper container">
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/header/logo@1x-mobile.png 1x,
+            ./images/header/logo@2x-mobile.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header/logo@1x-desctop.png 1x,
+            ./images/header/logo@2x-desctop.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header/logo@1x-tablet.png 1x,
+            ./images/header/logo@2x-tablet.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <img
+          class="logo__nav"
+          src="./images/header/logo@1x-desctop.png"
+          alt="page-logo"
+        />
+      </picture>
+    </a>
+    <div class="header__menu menu">
+      <div class="header__box">
+        <nav class="menu__navbar">
+          <ul class="menu__navbar-list">
+            <li><a class="menu__navbar-link" href="index.html">Home</a></li>
+            <li class="menu__navbar-item">
+              <a class="menu__navbar-link" href="javascript:void(0);"
+                >Favorite
+              </a>
+              <ul class="menu__navbar-sub-list">
+                <li>
+                  <a
+                    class="menu__navbar-sub-link"
+                    href="./favorite-cocktails.html"
+                    rel="noreferrer noopener nofollow"
+                    >Favorite cocktails</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu__navbar-sub-link"
+                    href="./favorite-ingredients.html"
+                    rel="noreferrer noopener nofollow"
+                    >Favorite ingredients</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <form class="header__search-form">
+          <button class="header__search-form-bttn" type="submit">
+            <svg class="header__search-form-icon">
+              <use href="./images/icons.svg#icon-loop"></use>
+            </svg>
+          </button>
+          <input
+            class="header__search-form-input"
+            placeholder="Search"
+            name="search"
+            type="text"
+            autocomplete="off"
+          />
+        </form>
+        <div class="header__switcher">
+          <span class="header__text-thema text-ligth">Ligth</span>
+          <div class="header__switcher-wrapper">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label">
+              <span class="checkbox-ball" id="ball"></span>
+            </label>
+          </div>
+          <span class="header__text-thema text-dark">Dark</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-icon">
+      <button class="btn-menu js-open-menu" type="button">
+        <svg style="display: block" width="30" height="16">
+          <use href="./images/icons.svg#icon-menu-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

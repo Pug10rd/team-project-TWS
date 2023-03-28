@@ -1,0 +1,202 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.modal-cocktails {
+  position: absolute;
+  width: 90%;
+  max-height: 95%;
+  overflow-y: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 40px;
+
+  border-radius: 2px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+  background-color: var(--background-primary-color);
+
+  @include tablet {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    width: 95%;
+  }
+
+  @include desktop {
+    padding-bottom: 28px;
+    width: 822px;
+  }
+}
+
+.modal-cocktails__descrip {
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: var(--text-secondary-color);
+}
+
+.modal-cocktails__icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: fill;
+}
+
+.backdrop-cocktails.is-hidden .modal-cocktails {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal-cocktails__title {
+  @include tablet {
+    margin-left: 282px;
+  }
+}
+
+.modal-cocktails__subtitle {
+  margin-top: 20px;
+
+  .modal-cocktails__subtitle {
+    margin-top: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    color: var(--text-primary-color);
+
+    @include tablet {
+      margin-top: 0;
+    }
+
+    color: #202025;
+
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+}
+
+.modal-cocktails__img {
+  margin-top: 32px;
+
+  border-radius: 4px;
+  background-color: teal;
+  display: block;
+
+  @include tablet {
+    height: 320px;
+
+    position: absolute;
+    display: flex;
+    top: -32px;
+    left: 0;
+    z-index: 2;
+  }
+
+  // @media screen and (min-width: $desktop) {
+}
+
+.modal-cocktails__conteine {
+  margin-top: 28px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary-color);
+
+  @include tablet {
+    margin-left: 282px;
+  }
+
+  .modal-cocktails__per {
+    margin-top: 8px;
+    color: var(--text-primary-color);
+
+    @include tablet {
+      margin-left: 282px;
+    }
+  }
+}
+
+.modal-cocktails__list {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-secondary-color);
+
+  @include tablet {
+    margin-left: 282px;
+  }
+}
+
+.modal-cocktails__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.modal-cocktails__button-close {
+  border: none;
+  background: transparent;
+
+  position: absolute;
+  display: flex;
+  top: 23px;
+  right: 23px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--text-accent-color);
+  }
+
+  @include tablet {
+    top: 19px;
+    right: 19px;
+  }
+}
+
+.modal-cocktails__button {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: background-color;
+
+  @include tablet {
+    margin-left: auto;
+  }
+}
+
+.modal-cocktails__span {
+  color: var(--text-primary-color);
+}
+
+.test {
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.test2 {
+  @include tablet {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}

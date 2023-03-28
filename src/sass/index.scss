@@ -1,0 +1,21 @@
+@import './utils/variables';
+
+@import './base/normalize';
+@import './base/common';
+@import './base/container';
+
+@import './layout/hero';
+@import './layout/header';
+@import './layout/catalog';
+@import './layout/footer';
+@import './layout/modal-cocktails';
+@import './layout/modal-ingredients';
+@import './layout/modal-header';
+@import './layout/cocktails-found';
+@import './layout/ing';
+
+@import './components/pagination';
+@import './components/buttons';
+@import './components/backdrop';
+
+@import './layout/favorite-page';

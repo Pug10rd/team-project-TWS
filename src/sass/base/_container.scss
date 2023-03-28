@@ -1,0 +1,23 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.container {
+    width: $mobile;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: $tablet;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include desktop {
+        width: $desktop;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

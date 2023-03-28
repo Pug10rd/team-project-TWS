@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 110px;
+    width: 100%;
+    background: var(--background-accent-color);
+}
+
+.footer-info {
+    color: var(--text-primary-inverse-color);
+}

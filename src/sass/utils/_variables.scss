@@ -1,0 +1,46 @@
+//  container sizes
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+  // для тексту і рамок
+  --text-accent-color: #fd5103;
+
+  // для заливки
+  --background-accent-color: #fe7031;
+
+  // для фону
+  --background-primary-color: #fcfcfc;
+
+  // для кнопок при ховері
+  --background-hover-color: #f5f5f5;
+
+  // для заголовків
+  --text-primary-color: #202025;
+
+  // для тексту кнопок
+  --text-primary-inverse-color: #ffffff;
+
+  // для тексту
+  --text-secondary-color: #5f6775;
+
+  // для тексту в модалці і алфавіту
+  --text-tertiary-color: #5f6775;
+
+  // для бордеру пагінації
+  --pagination-border-color: #eaebea;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --background-primary-color: #202025;
+  --background-hover-color: #373740;
+  --text-primary-color: #fcfcfc;
+  --text-primary-inverse-color: #fcfcfc;
+  --text-secondary-color: #fcfcfc;
+  --text-tertiary-color: #bdbdbd;
+  --pagination-border-color: #4f4e4e;
+}

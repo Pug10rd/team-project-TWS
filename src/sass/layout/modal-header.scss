@@ -1,0 +1,214 @@
+.header__modal {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-modal-header {
+  z-index: 9;
+}
+.header__switcher-modal {
+  
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+}
+
+.header__search-form-modal {
+  // max-width: 320px;
+  width: 100%;
+  border: 2px solid var(--text-accent-color);
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @include tablet {
+    display: none;
+  }
+
+}
+
+.menu__navbar-list-modal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 32px;
+  @include tablet {
+    margin-top: 54px;
+    margin-left: 330px;
+    align-items: flex-start;
+    gap: 40px;
+  }
+}
+
+.menu__navbar-list-modal > li {
+  position: relative;
+}
+.header__wrapper-switcher {
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+}
+
+.header__light-switcher {
+  font-family: 'Poppins';
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 8px;
+  // color: var(--text-accent-color);
+}
+
+.header__dark-switcher {
+  font-family: 'Poppins';
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 8px;
+  // color: var(--text-secondary-color);
+}
+.menu__navbar-sub-list-modal {
+  @include desktop {
+    border: 1px solid var(--text-accent-color);
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 210px;
+    display: none;
+  }
+}
+.menu__navbar-sub-list-modal {
+  border: 1px solid var(--text-accent-color);
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 210px;
+  display: none;
+}
+.menu__navbar-sub-list-modal > li {
+  position: relative;
+  &:hover {
+    background-color: var(--text-accent-color);
+  }
+}
+
+.menu__navbar-sub-list-modal > li .menu__navbar-sub-link-modal {
+  display: inline-block;
+  padding: 12px 0 12px 12px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: inherit;
+
+  &:hover {
+    color: var(--background-primary-color);
+  }
+}
+
+.menu__navbar-item {
+  &:hover .menu__navbar-sub-list-modal {
+    display: block;
+  }
+}
+.menu__navbar-link-modal {
+  font-size: 28px;
+  line-height: 1.2px;
+  padding: 0;
+  color: var(--text-primary-color);
+}
+
+.header__svg-close {
+  margin-left: auto;
+}
+.header__svg-down {
+  margin-left: 6px;
+  fill: var(--text-primary-color);
+  background-color: var(--background-primary-color);
+}
+
+.header__search-form-input-modal {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  font-family: 'Popins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: var(--text-tertiary-color);
+}
+
+.header__logo-modal {
+  display: none;
+  @include tablet {
+    display: flex;
+    margin-right: 60px;
+  }
+}
+
+.header__switcher-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+
+  &.checked {
+      .text-ligth {
+        color: var(--text-secondary-color);
+      }
+  
+      .text-dark {
+        color: var(--text-accent-color);
+      }
+  
+      .checkbox-label {
+        background-color: var(--text-accent-color);
+        border: 1px solid var(--text-primary-inverse-color);
+  
+        .checkbox-ball {
+          right: 1px;
+          left: auto;
+          background-color: var(--text-primary-inverse-color);
+        }
+      }
+    }
+}
+
+.header__wrapper-modal-header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  color: var(--text-primary-color);
+  background-color: var(--background-primary-color);
+  
+  @include desktop {
+    display: none;
+  }
+  display: none;
+}
+
+.is-open {
+  display: block;
+}
+
+.header__wrapper-modal-header.is-open {
+  display: block;
+}
+.btn-menu-modal {
+  border: none;
+  margin-left: auto;
+  fill: var(--text-primary-color);
+  background-color: var(--background-primary-color);
+}
+
+

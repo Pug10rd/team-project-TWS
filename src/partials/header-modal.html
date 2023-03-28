@@ -1,0 +1,99 @@
+<div class="header__wrapper-modal-header js-menu-container">
+    <div class="header__switcher-modal">
+
+    <div class="header__wrapper-switcher">    
+      <a class="header__logo-modal" href="index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/header/logo@1x-mobile.png 1x,
+            ./images/header/logo@2x-mobile.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header/logo@1x-desctop.png 1x,
+            ./images/header/logo@2x-desctop.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header/logo@1x-tablet.png 1x,
+            ./images/header/logo@2x-tablet.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <img
+          class="logo__nav"
+          src="./images/header/logo@1x-desctop.png"
+          alt="page-logo"
+        />
+      </picture>
+    </a>  
+        <div class="header__switcher-btn">
+          <span class="header__text-thema text-ligth">Ligth</span>
+          <div class="header__switcher-wrapper">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label">
+              <span class="checkbox-ball" id="ball"></span>
+            </label>
+          </div>
+          <span class="header__text-thema text-dark">Dark</span>
+        </div>
+        <button class="btn-menu-modal js-close-menu" type="button">
+          <svg class="header__svg-close" width="18" height="18">
+            <use href="/src/images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+          
+    </div>
+          <form class="header__search-form-modal">
+            <button class="header__search-form-bttn">
+              <svg class="header__search-form-icon">
+                <use href="./images/icons.svg#icon-loop"></use>
+              </svg>
+            </button>
+            <input
+              class="header__search-form-input-modal"
+              placeholder="Search"
+              name="search"
+              type="text"
+              autocomplete="off"
+            />
+          </form>
+    <ul class="menu__navbar-list-modal">
+            <li><a class="menu__navbar-link-modal" href="index.html">Home</a></li>
+            <li class="menu__navbar-item">
+              <a class="menu__navbar-link-modal" href="#">Favorite                
+                <svg class="header__svg-down" width="18" height="10">
+                <use href="/src/images/icons.svg#icon-arrowdown"></use>
+              </svg></a>
+              <ul class="menu__navbar-sub-list-modal">
+                <li>
+                  <a
+                    class="menu__navbar-sub-link-modal"
+                    href="./favorite-cocktails.html"
+                    rel="noreferrer noopener nofollow"
+                    >Favorite cocktails</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu__navbar-sub-link-modal"
+                    href="./favorite-ingredients.html"
+                    rel="noreferrer noopener nofollow"
+                    >Favorite ingredients</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        
+</div>

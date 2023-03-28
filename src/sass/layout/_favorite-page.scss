@@ -1,0 +1,58 @@
+@import '../utils/mixins';
+
+.favorite__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.favorite__title {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.9;
+  color: var(--text-primary-color);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  padding-top: 60px;
+
+  @include tablet {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    padding-top: 60px;
+    margin-bottom: 78px;
+  }
+
+  @include desktop {
+    font-family: 'Poppins';
+    font-size: 48px;
+    line-height: 1.5;
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+}
+
+.favorite__text {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 3;
+  color: var(--text-primary-color);
+  margin-top: 60px;
+  max-width: 242px;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 2.5;
+    max-width: 296px;
+  }
+
+  @include desktop {
+    font-size: 32px;
+    line-height: 2.25;
+    max-width: 385px;
+  }
+}

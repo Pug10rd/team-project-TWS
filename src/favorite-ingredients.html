@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page favorite ingredients</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="shortcut icon"
+      href="./images/orange-juice-cocktail.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main class="main-content">
+      <section class="favorite__ingredients container">
+        <h2 class="favorite__title">Favorite ingredients</h2>
+        <!-- <div class="favorite__container container">
+
+          <p class="favorite__text">
+            You haven't added any favorite ingredients yet
+          </p>
+          <ul class="favorite__list"></ul>
+        </div> -->
+        <div class="js-favorite__ing js-ingredients-list catalog__list"></div>
+        <div class="paginator"></div>
+      </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modai-ingredients.html"></include>
+    <include src="./partials/header-modal.html"></include>
+    <script type="module" src="./favorite-ingredient.js"></script>
+  </body>
+</html>

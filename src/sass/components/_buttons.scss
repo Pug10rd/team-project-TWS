@@ -1,0 +1,75 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.button-primary {
+    display: block;
+    padding: 7px 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-primary-inverse-color);
+    background-color: var(--background-accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--background-hover-color);
+      color: var(--text-accent-color);
+    }
+
+    @include tablet {
+      padding: 12px 27px;
+      font-size: 20px;
+    }
+
+    @include desktop {
+      padding: 12px 38px;
+    }
+  }
+
+  .button-secondary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding: 7px 20px;
+    color: var(--text-accent-color);
+    border: 1px solid var(--text-accent-color);
+    border-radius: 4px;
+    background-color: var(--background-primary-color);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--background-hover-color);
+    }
+
+    &[data-action="remove_favorite"] svg {
+      fill: var(--text-accent-color);
+    }
+
+    @include tablet {
+      padding: 12px 18px;
+      font-size: 20px;
+    }
+
+    @include desktop {
+      padding: 12px 21px;
+    }
+  }
+
+  .favorite-icon {
+    fill: var(--text-accent-color);
+  }
+
+ 

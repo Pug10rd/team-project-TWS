@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page favorite</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+    rel="shortcut icon"
+    href="./images/orange-juice-cocktail.png"
+    type="image/x-icon"
+  />
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main class="main-content">
+      <section class="favorite__cocktails">
+        <div class="favorite__container container">
+          <h2 class="favorite__title">Favorite cocktails</h2>
+
+          <ul class="js-favorite__cocktails catalog__list">
+
+          </div>
+
+            <p class="favorite__text">You haven't added any favorite cocktails yet</p>
+          <ul class="favorite__list"></ul>
+          <div class="paginator"></div>
+        </div>
+      </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modai-ingredients.html"></include>
+    <include src="./partials/modal-cocktails.html"></include>
+    <include src="./partials/header-modal.html"></include>
+    <div class="hidden">
+      <svg class="catalog__icon" width="21" height="19">
+        <use href="./images/icons.svg#icon-like"></use>
+      </svg>
+      </div>
+    <script type="module" src="./favorite-cocktails.js"></script>
+  </body>
+</html>
